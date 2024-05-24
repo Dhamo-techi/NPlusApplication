@@ -256,8 +256,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             let size = bannerCollectionView.frame.size
             return CGSize(width: size.width, height: size.height)
         }else{
-            let width =  400.0 / 1.0 - 10.0
-            let height = 160.0
+            let width =  (collectionView.bounds.width - 1 * 10) / 1
+            let height = CGFloat(160.0)
             return CGSize(width: width, height: height)
         }
     }
